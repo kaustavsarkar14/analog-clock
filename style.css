@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.clock {
+    height: 30rem;
+    width: 30rem;
+    background-color: aqua;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/004/849/558/original/clock-face-free-vector.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hour {
+    position: absolute;
+    height: 15rem;
+    width: 15rem;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    z-index: 3;
+}
+.hour::before {
+    content: "";
+    height: 50%;
+    width: 6px;
+    background-color: black;
+    border-radius: 40%;
+}
+.min {
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    z-index: 2;
+}
+.min::before {
+    content: "";
+    height: 50%;
+    width: 4px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 40%;
+}
+.sec {
+    position: absolute;
+    height: 23rem;
+    width: 30rem;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    z-index: 1;
+}
+.sec::before {
+    content: "";
+    height: 50%;
+    width: 2px;
+    background-color: rgb(250, 0, 0);
+    border-radius: 40%;
+}
